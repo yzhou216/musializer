@@ -59,6 +59,18 @@ On Debian, Ubuntu, etc, do this:
 $ sudo apt install libx11-dev libxcursor-dev libxrandr-dev libxinerama-dev libxi-dev
 ```
 
+Or using [Nix](https://nixos.org) (with [experimental
+features](https://nix.dev/manual/nix/2.30/development/experimental-features)
+`nix-command` and `flakes` enabled), navigate to the repo root and run:
+
+```console
+$ nix develop
+```
+
+This is particularly useful for building and running Musializer on
+non-[FHS](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html)-compliant
+distros such as NixOS and GNU Guix System.
+
 On other distro's, use the appropriate package manager.
 
 ### Windows MSVC
